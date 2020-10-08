@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" prefWidth="275.0" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controller">
+   <children>
+      <AnchorPane prefHeight="357.0" prefWidth="275.0">
+         <children>
+            <TextField fx:id="txtN" editable="false" layoutX="8.0" layoutY="14.0" prefHeight="49.0" prefWidth="259.0" />
+            <ImageView fx:id="btnAC" fitHeight="64.0" fitWidth="64.0" layoutX="8.0" layoutY="63.0" onMouseClicked="#onAcClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/ac.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnC" fitHeight="64.0" fitWidth="64.0" layoutX="72.0" layoutY="63.0" onMouseClicked="#onCClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/c.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnDi" fitHeight="64.0" fitWidth="64.0" layoutX="136.0" layoutY="63.0" onMouseClicked="#onDiClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/d.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnTi" fitHeight="64.0" fitWidth="64.0" layoutX="200.0" layoutY="63.0" onMouseClicked="#onTiClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/v.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn1" fitHeight="64.0" fitWidth="64.0" layoutX="8.0" layoutY="127.0" onMouseClicked="#on1Click" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn2" fitHeight="64.0" fitWidth="64.0" layoutX="72.0" layoutY="127.0" onMouseClicked="#on2Click" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn3" fitHeight="64.0" fitWidth="64.0" layoutX="136.0" layoutY="127.0" onMouseClicked="#on3Click" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/3.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn4" fitHeight="64.0" fitWidth="64.0" layoutX="8.0" layoutY="191.0" onMouseClicked="#on4Click" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/4.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnPl" fitHeight="64.0" fitWidth="64.0" layoutX="200.0" layoutY="191.0" onMouseClicked="#onPlClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/+.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnMi" fitHeight="64.0" fitWidth="64.0" layoutX="200.0" layoutY="127.0" onMouseClicked="#onMiClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/-.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn5" fitHeight="64.0" fitWidth="64.0" layoutX="72.0" layoutY="191.0" onMouseClicked="#on5Click" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/5.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn6" fitHeight="64.0" fitWidth="64.0" layoutX="136.0" layoutY="191.0" onMouseClicked="#on6Click" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/6.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn7" fitHeight="64.0" fitWidth="64.0" layoutX="8.0" layoutY="255.0" onMouseClicked="#on7Click" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/7.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn8" fitHeight="64.0" fitWidth="64.0" layoutX="72.0" layoutY="255.0" onMouseClicked="#on8Click" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/8.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn9" fitHeight="64.0" fitWidth="64.0" layoutX="136.0" layoutY="255.0" onMouseClicked="#on9Click" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/9.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnMM" fitHeight="64.0" fitWidth="64.0" layoutX="200.0" layoutY="255.0" onMouseClicked="#onMMClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/mm.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="158.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="By Isaque, Version 1" />
+            <ImageView fx:id="btnEq" fitHeight="49.0" fitWidth="48.0" layoutX="218.0" layoutY="15.0" onMouseClicked="#onEqClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/=.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnP" fitHeight="64.0" fitWidth="64.0" layoutX="72.0" layoutY="318.0" onMouseClicked="#onPClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/..png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn0" fitHeight="64.0" fitWidth="64.0" layoutX="8.0" layoutY="318.0" onMouseClicked="#on0Click" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/0.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
