@@ -95,27 +95,57 @@ public class Controller {
     }
     @FXML
     private void on4Click(){
-        txtN.setText(txtN.getText()+"4");
+        if (txtN.getText().startsWith("0")){
+            txtN.setText("");
+            txtN.setText(txtN.getText() + "4");
+        }
+        else
+            txtN.setText(txtN.getText()+"4");
     }
     @FXML
     private void on5Click(){
-        txtN.setText(txtN.getText()+"5");
+        if (txtN.getText().startsWith("0")){
+            txtN.setText("");
+            txtN.setText(txtN.getText() + "5");
+        }
+        else
+            txtN.setText(txtN.getText()+"5");
     }
     @FXML
     private void on6Click(){
-        txtN.setText(txtN.getText()+"6");
+        if (txtN.getText().startsWith("0")){
+            txtN.setText("");
+            txtN.setText(txtN.getText() + "6");
+        }
+        else
+            txtN.setText(txtN.getText()+"6");
     }
     @FXML
     private void on7Click(){
-        txtN.setText(txtN.getText()+"7");
+        if (txtN.getText().startsWith("0")){
+            txtN.setText("");
+            txtN.setText(txtN.getText() + "7");
+        }
+        else
+            txtN.setText(txtN.getText()+"7");
     }
     @FXML
     private void on8Click(){
-        txtN.setText(txtN.getText()+"8");
+        if (txtN.getText().startsWith("0")){
+            txtN.setText("");
+            txtN.setText(txtN.getText() + "8");
+        }
+        else
+            txtN.setText(txtN.getText()+"8");
     }
     @FXML
     private void on9Click(){
-        txtN.setText(txtN.getText()+"9");
+        if (txtN.getText().startsWith("0")){
+            txtN.setText("");
+            txtN.setText(txtN.getText() + "9");
+        }
+        else
+            txtN.setText(txtN.getText()+"9");
     }
     @FXML
     private void onPlClick() {
@@ -127,7 +157,8 @@ public class Controller {
     private void onAcClick(){
         for(int i = 0; i < s.size(); i++){
             s.remove(i);
-            n.remove(i);
+            if(n.size() < i)
+                n.remove(i);
         }
         txtN.setText("0");
     }
@@ -171,7 +202,11 @@ public class Controller {
             if(n.get(i) == "+")
                 r += s.get(i) + s.get(i+1);
             else if(n.get(i) == "-")
-                r -= s.get(i) - s.get(i+1);
+                if(s.get(i).toString().startsWith("-")) {
+                    s.remove(i);
+                    s.add(Double.parseDouble("(" + txtN.getText() + ")"));
+                }else
+                    r -= s.get(i) - s.get(i+1);
             else if(n.get(i) == "/")
                 r += s.get(i) / s.get(i+1);
             else if(n.get(i) == "*")
