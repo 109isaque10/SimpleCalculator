@@ -15,4 +15,5 @@ I´m available from 1pm to 7pm. but just for talking i´m available from 10am to
 i will make all suggestion that i can. because i dont know that much of java, not an expert, nor an begginer.
 If you download i will be glad only because someone rather than my parents are interested, i know that a calculator is not that thing, but it was hard to make.
 ## Screenshots
-![1](/images/1.png)
+![](screenshots/1.PNG)
+![](screenshots/2.PNG)
